@@ -88,7 +88,7 @@
           <tr>
             <td width="67%" valign="middle">
               <p align="center" lang="zh-cn"><name>Zhiyuan PENG 彭志远</name></p>
-              <p> I am an incoming Post-doc in the Generative Intelligent Computing Lab led by <a href="https://dongkuanx27.github.io/">DK Xu</a> at <a href="https://www.ncsu.edu/">North Carolina State University</a>. My recent research interest mainly focuses on improving the efficiency and reliablity of augmented language models (ALMs) and applying intelligent agents (powered by ALMs) into networking. 
+              <p> I am a Post-doc in the Generative Intelligent Computing Lab led by <a href="https://dongkuanx27.github.io/">DK Xu</a> and the NICE Lab led by <a href="https://nicelab.us/">Yuchen Liu</a> at <a href="https://www.ncsu.edu/">North Carolina State University</a>. My recent research interest mainly focuses on improving the efficiency and reliablity of augmented language models (ALMs) and applying intelligent agents (powered by ALMs) into networking. 
               </p>
               <p>
               Before coming to NC State, I obtained my Ph.D degree of Electronic Engineering at <a href="https://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong (CUHK)</a> advised by <a href="http://www.ee.cuhk.edu.hk/~tanlee/my_students.html">Tan LEE</a>, focused on probabilistic speaker modeling for speech processing. 
@@ -114,7 +114,7 @@
               	
               </p>
               <p>
-              I am now devoted to efficient prompting paradigms for tool-augmented large language models (ALMs). I'm also interested in other topics relevant to ALMs, including tool management and optimization, acceleration and automation of ALMs, etc. We have recently released <a href="https://github.com/billxbf/ReWOO">ReWOO</a>, a work on <a href="https://arxiv.org/pdf/2305.18323.pdf">efficient prompting</a>.
+              I am now devoted to efficient prompting and decoding acceleration for arge language models. I'm also interested in tool management and optimization, acceleration and automation of ALMs.
               </p>
             </td>
           </tr>
@@ -128,6 +128,61 @@
             </td>
           </tr>
         </table>
+
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="image/lora.jpg" alt="pacman" width="180" height="180"></td>
+            <td width="75%" valign="center">
+            <p>
+                <papertitle>
+                <a href="https://arxiv.org/abs/2312.08079.pdf">Sparsely Shared LoRA on Whisper for Child Speech Recognition</a>
+            </p>
+            <p>
+		Wei Liu, Ying Qin, <b>Zhiyuan Peng</b>, Tan Lee  <b>ICASSP 2024</b>
+            </p>
+            <p>
+		We explore the use of parameter-efficient fine-tuning (PEFT) methods, specifically LoRA, Bitfit, AdaLoRA, and a novel approach called Sparsely Shared LoRA (S2-LoRA), to improve the zero-shot performance of the Whisper automatic speech recognition (ASR) model on low-resource child speech. The experiments show that S2-LoRA, with fewer trainable parameters, achieves comparable in-domain adaptation performance to AdaLoRA and demonstrates better generalization on out-of-domain data while also learning a similar rank distribution as AdaLoRA.
+            </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="image/ptune_whisper.jpg" alt="pacman" width="180" height="180"></td>
+            <td width="75%" valign="center">
+            <p>
+                <papertitle>
+                <a href="https://arxiv.org/abs/2312.08079.pdf">Extending Whisper with Prompt Tuning to Target-Speaker ASR</a>
+            </p>
+            <p>
+		Hao Ma, <b>Zhiyuan Peng</b>, Mingjie Shao, Jing Li, Ju Liu <b>ICASSP 2024</b>
+            </p>
+            <p>
+		We introduce prompt tuning to extend the large-scale single-talker ASR model, Whisper, into target-speaker ASR. Experimental results demonstrate that prompt tuning can achieve performance similar to state-of-the-art full fine-tuning methods, with only 1% of task-specific model parameters, while preserving Whisper's unique features in transcribing natural and informative speech from target speakers in multi-talker scenarios.
+            </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="image/gentopia.png" alt="pacman" width="180" height="180"></td>
+            <td width="75%" valign="center">
+            <p>
+                <papertitle>
+                <a href="https://arxiv.org/abs/2308.04030.pdf">Gentopia.AI: A Collaborative Platform for Tool-Augmented LLMs</a>
+            </p>
+            <p>
+	    Binfeng Xu, Xukun Liu, Hua Shen, Zeyu Han, Yuhan Li, Murong Yue, <b>Zhiyuan Peng</b>, Yuchen Liu, Ziyu Yao, Dongkuan Xu  <b>EMNLP 2023 (System Demo Track)</b>
+            </p>
+            <p>
+	    We present an augmented language model platform that enables flexible customization of agents through simple configurations, seamlessly integrating various language models, task formats, prompting modules, and plugins into a unified paradigm.
+            </p>
+            </td>
+          </tr>
+        </table>
+
         <table width="100%" align="center" border="0" cellpadding="20">
           <tr>
             <td width="25%"><img src="image/rewoo.png" alt="pacman" width="180" height="180"></td>
@@ -137,10 +192,29 @@
                 <a href="https://arxiv.org/abs/2305.18323.pdf">ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models</a>
             </p>
             <p>
-            Binfeng Xu, <b>Zhiyuan Peng</b>, Bowen Lei, Subhabrata Mukherjee, Yuchen Liu, Dongkuan Xu, submitted to <b>NeurIPS</b>
+            Binfeng Xu, <b>Zhiyuan Peng</b>, Bowen Lei, Subhabrata Mukherjee, Yuchen Liu, Dongkuan Xu
             </p>
             <p>
             Existing ALM systems trigger LLM thought processes while pulling observations from external tools in an interleaved fashion. Such paradigm, though straightforward and easy to implement, often leads to huge computation complexity from redundant prompts and repeated execution. This paper addresses such challenges for the first time, proposing a modular paradigm ReWOO (Reasoning WithOut Observation) that detaches the reasoning process from external observations, thus significantly reducing token consumption.
+            </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="image/comflp.jpg" alt="pacman" width="180" height="180"></td>
+            <td width="75%" valign="center">
+            <p>
+                <papertitle>
+                <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2023/liu23p_interspeech.pdf">CoMFLP: Correlation Measure based Fast Search on ASR Layer Pruning</a>
+            </p>
+            <p>
+		Wei Liu, <b>Zhiyuan Peng</b>, Tan Lee, <b>Interspeech 2023</b>
+            </b>
+            </p>
+            <p>
+		We develope CoMFLP, a novel layer pruning (LP) algorithm for efficient deployment of deep Transformer-based speech recognition models. CoMFLP uses a correlation matrix to quickly identify and prune redundant layers, significantly improving model efficiency without sacrificing performance.
             </p>
             </td>
           </tr>
@@ -152,7 +226,7 @@
             <td width="75%" valign="center">
             <p>
                 <papertitle>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10094608">Covariance regularization for Probabilistic Linear Discriminant Analysis </a>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10094608">Covariance Regularization for Probabilistic Linear Discriminant Analysis </a>
             </p>
             <p>
             
@@ -184,7 +258,6 @@
             </td>
           </tr>
         </table>
-        
         
         <table width="100%" align="center" border="0" cellpadding="20">
           <tr>
